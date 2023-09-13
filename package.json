@@ -1,0 +1,15 @@
+{
+  "name": "projet_portfolio",
+  "version": "1.0.0",
+  "description": "Dans cette réalisation il faut privilégier une structure html et css propre et une intéraction d'interface piloter par javascript.\r Il est préférable d'installer Babel par le CLI et surtout le faire si node.js est installé dans la l'environnement de développement y compris NPM : Node Package Manager.",
+  "main": "index.js",
+  "scripts": {
+    "build": "babel --no-babelrc src -w -d js --preset=env"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}

@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    letter-spacing: .1rem;
+    background-color: var(--bgcolor-theme);
+    color: var(--text-color);
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    
+}
+
+*{
+    box-sizing: border-box;
+}
+img{
+    display: inline-block;
+    vertical-align: middle;
+}
+h1,h2,h3,p,ul,ol{
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+    font-weight: normal;
+}
+/* ajouter les images */
+a{
+    text-decoration: none;
+    color: #222;
+}
+button, input{
+    padding: 0;
+    background: none;
+    border: 0;
+}
+:root{
+    color-scheme: light dark; 
+    --bgcolor-theme: #242424;
+    --text-color: #fff;
+    --bgcolor-light-theme: #fafafa;
+    --text-color-light-theme: #222;
+}
+/* theme */
+/* jouer les modes */
+.mode-dark{
+    background-color: var(--bgcolor-theme);
+    color: var(--text-color);
+    transition: all .6s ease-in-out;
+    
+}
+.mode-light{
+    background-color: var(--bgcolor-light-theme);
+    color: var(--text-color-light-theme);
+    
+}
+.material-symbols-outlined{
+    text-shadow: none;
+    color: var(--text-color);
+}
+/* end */
+
+header h1{
+    font-family: 'rowdexregular';
+    text-align: center;
+    line-height: 7rem;
+    font-size: 8rem;
+    padding: 2rem 0;
+    /* exemple habillage de texte*/
+    filter: drop-shadow(0 0 0.60rem rgb(224, 231, 123));
+    text-shadow:#e7f6ff 0 -1px 0,
+    #00abf0 1px 1px 0,
+    #0096e4 2px 2px 0,
+    #00ceff 3px 3px 0,
+    #006392 4px 4px 0,
+    #00485b 5px 5px 0,
+    #333 5px 5px 10px;color:#44e9ff;
+    /* background-color:#2E8ECE; */
+}
+/* partie span contenant une icone */
+header h1 span{
+    text-shadow: none;
+    color: var(--text-color);
+}
+header h1 .toogle-color{ 
+    /* ajout d'une class dynamique pour le changement de couleur */
+    color: var(--text-color-light-theme);
+}
+header > h1 .light-mode{
+    cursor: pointer;
+   
+}
+/* end */
+
+main{
+    max-width: 120rem;
+    margin: auto;
+}
+section ul.gallery-primary-logo{
+    padding: 1rem 0;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1rem;
+}
+section ul.gallery-primary-logo li{
+    clip-path: circle(40%); /* masque */
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+    filter: drop-shadow(0 0 0.60rem rgb(224, 231, 123));
+}
+section ul.gallery-primary-logo li:hover{
+    clip-path: circle(60%);
+}
+section ul.gallery-primary-logo img{
+    width: 100%;
+    padding: 1rem;
+}
+section{
+    margin-bottom: 3rem;
+}
+section h2, section h3{
+    padding: 1rem 0;
+    font-family: 'rowdexregular';
+    line-height: 5rem;
+    font-weight: 400;
+    font-size: 4.5rem;
+    text-shadow:#e7f6ff 0 -1px 0,
+    #00abf0 1px 1px 0,
+    #0096e4 2px 2px 0,
+  /*   #00ceff 3px 3px 0, */
+    #006392 4px 4px 0,
+    #00485b 5px 5px 0,
+    #333 5px 5px 10px;color:#44e9ff;
+    
+}
+footer{
+    line-height: 5rem;
+    text-align: center;
+}
+
+/* confetti */
+
