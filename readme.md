@@ -2,6 +2,7 @@
 
 Dans cette réalisation il faut privilégier une structure html et css propre et une intéraction d'interface piloter par javascript.
 Il est préférable d'installer Babel par le CLI et surtout le faire si node.js est installé dans la l'environnement de développement y compris NPM : Node Package Manager.
+![logo](https://logos-world.net/wp-content/uploads/2023/02/JavaScript-Symbol.png)
 
 
 ## Installation de Babel
