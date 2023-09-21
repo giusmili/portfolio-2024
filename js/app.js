@@ -33,7 +33,9 @@ document.addEventListener("DOMContentLoaded", e => {
     };
 
     button_mode.btn_toggle(); //event
+    console.log("start");
 
+    console.log("hello tout va bien");
 
     /* btn.addEventListener("click",(e)=>{
     e.preventDefault()
